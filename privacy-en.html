@@ -3,24 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy — Banconote 0 €</title>
+<title>Privacy Policy — 0 Euro Souvenir</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
 <nav><a href="index.html">Home</a><a href="privacy-en.html">Privacy</a><a href="terms-en.html">Terms of use</a><a href="privacy.html">Italiano</a></nav>
 <h1>Privacy Policy</h1>
-<p class="muted">App Banconote 0 € (Zero Euro Souvenir) &middot; Last updated: 24 October 2026</p>
+<p class="muted">0 Euro Souvenir app &middot; Last updated: 30 October 2026</p>
 
 <h2>1. Who is the data controller</h2>
 <p>The data controller is <strong>Alessandro Ruzza</strong>, an individual. For any request about your data, write to <a href="mailto:zeroeurosouvenir@icloud.com">zeroeurosouvenir@icloud.com</a>.</p>
 
 <h2>2. What data we process</h2>
 <ul>
-<li><strong>Account.</strong> Your email address, which you use to sign in with a link sent by email (there is no password). Optionally you can provide your name, city, country, year of birth and how you found the app; these are used for your profile and for aggregated statistics. We also store your language and notification choice.</li>
-<li><strong>Content you add.</strong> Places, banknote issues, confirmations and reports, your collection and the photos you upload. Published places and photos are visible to all users, but they do not show your name.</li>
-<li><strong>Location.</strong> Only if you grant permission and only while the app is in use. It is used to center the map near you and to indicate where a new place is. <strong>Your location is not stored or used to track your movements</strong>: if you add a place we store the coordinates of the place, not yours.</li>
-<li><strong>Photos.</strong> If you grant permission, the app accesses the camera or photo library only when you choose to add a photo. Photos of places and issues are reviewed by moderators before publication. Please do not upload photos showing recognizable people.</li>
+<li><strong>Account.</strong> Your email address, which you use to sign in with a link or a 6-digit code sent by email (or with a password, if you set one). We also store your language and notification choice.</li>
+<li><strong>Profile.</strong> A <strong>nickname</strong>, assigned automatically and which you can change. Optionally you can provide your name, city, country, year of birth and how you found the app; these are used for your profile and for aggregated statistics. Your name, city and year of birth are not shown to other users.</li>
+<li><strong>Collection and purchase details.</strong> The banknotes you add, the serial number and, if you provide them, purchase date and place, price paid and notes. This data is <strong>private</strong>: only you can see it. It is not shown to other users or to moderators.</li>
+<li><strong>Photos.</strong> The front and back photos taken with the scanner, and the photos of places you choose to add. See section 5.</li>
+<li><strong>Points, titles and achievements.</strong> The points you earn through your actions (scans, confirmations, approved contributions) and the titles and achievements derived from them.</li>
+<li><strong>Friends and leaderboard.</strong> Your friend code, requests and friendships, and your visibility settings. See section 4.</li>
+<li><strong>Wishlist and favorite places.</strong> These are <strong>private</strong>: only you can see them. The &ldquo;Recently viewed&rdquo; history stays only on your phone.</li>
+<li><strong>Notifications.</strong> If you turn them on, we store a <em>notification token</em> of your phone (a technical code provided by Apple and Expo) linked to your account. It is used only to send you alerts: a friend request received or accepted, and banknotes on your wishlist that are available again. Permission is asked after you add your first banknote or when you turn on the switch in Profile; you can turn them off from Profile (the token is deleted) or from iOS Settings.</li>
+<li><strong>Content you add.</strong> Places, banknote issues, confirmations and availability reports. Published places and photos are visible to all users, but they do not show your name.</li>
+<li><strong>Reports about users and photos.</strong> If you report a user (inappropriate nickname or misbehavior) or a photo, we keep who reported, what, the reason and the date. Reports are seen only by moderators; the reported person is not told who reported them.</li>
+<li><strong>Location.</strong> Only if you grant permission and only while the app is in use. It is used to center the map near you and, if you create a new place, to indicate where it is. <strong>Your location is not stored or used to track your movements</strong>: if you add a place we store the coordinates of the place, not yours.</li>
 <li><strong>Technical data.</strong> IP address and device information processed by the third-party services listed below, as needed for them to work.</li>
 </ul>
 <p>We do not use behavioral analytics tools or tracking across other companies' apps and websites.</p>
@@ -28,37 +35,58 @@
 <h2>3. Advertising</h2>
 <p>The app <strong>does not show ads</strong>, contains no advertising SDKs and uses no tracking tools.</p>
 
-<h2>4. Third-party services</h2>
+<h2>4. Who sees what</h2>
+<ul>
+<li><strong>Only you:</strong> email, name, city, year of birth, purchase details, serial numbers, wishlist, favorite places, notification token and the &ldquo;Verified photo&rdquo; badge.</li>
+<li><strong>Leaderboard.</strong> If you have a nickname and leave the &ldquo;Appear on the leaderboard&rdquo; option on (it is on by default), other users see your <strong>nickname, title and points</strong>. Never your email, name or city. You can hide at any time from <em>Friends &rarr; Privacy</em>.</li>
+<li><strong>Friends.</strong> Every user has a friend code. A friend request is valid only after the other person accepts it. Friends see your nickname and points.</li>
+<li><strong>Collection.</strong> You choose who sees it: <strong>Only me</strong>, <strong>Friends</strong> (default) or <strong>Everyone</strong> (only if you appear on the leaderboard). Whoever can see it sees <strong>only which banknotes you own, how many copies and the approved photos</strong>. Price, place and date of purchase, notes and serial number are never shared.</li>
+<li><strong>All users:</strong> published places and approved photos, without your name.</li>
+</ul>
+
+<h2>5. Scanner and photos</h2>
+<ul>
+<li>To photograph banknotes the app uses the <strong>iOS document scanner (VisionKit)</strong>, which straightens and crops the image on your phone. Text reading (edition and serial number) happens <strong>on your phone</strong> with the Google ML Kit library: images are <strong>not sent</strong> to Google or to any other recognition service.</li>
+<li>Photos are uploaded only if you add the banknote to your collection. They stay in a <strong>private</strong> storage (Supabase, EU) until a moderator approves or rejects them: in the meantime only you and the moderators can see them.</li>
+<li>If approved, the photo becomes the banknote's photo in the catalog, visible to everyone <strong>without your name</strong>. If the banknote already has a photo, a moderator decides whether to replace it; the previous photo is kept by the moderators and can be restored.</li>
+<li>Rejected photos are deleted. Those who abuse the feature may be blocked from sending photos.</li>
+<li>Please do not upload photos showing recognizable people or personal data.</li>
+</ul>
+<p>&ldquo;Export collection (CSV)&rdquo; creates a file on your phone and opens the iOS share sheet: you decide where to send it, and the file does not go through our servers. &ldquo;Share&rdquo; creates an image of the card to send wherever you like.</p>
+
+<h2>6. Third-party services</h2>
 <ul>
 <li><strong>Supabase</strong> &mdash; database, sign-in and file storage. Data is hosted in Ireland (European Union).</li>
+<li><strong>Apple and Expo</strong> &mdash; delivery of push notifications (Apple Push Notification service and Expo's notification service), only if you turn them on. They receive the token and the text of the notification.</li>
+<li><strong>Google ML Kit</strong> &mdash; text-reading library included in the app and run on your phone. As described by Google, it may transmit anonymous technical operating data (device model, system version, app identifier and version, performance metrics); it does not receive the images.</li>
 <li><strong>OpenFreeMap</strong> &mdash; provides the maps; it receives your IP address and the map areas you view.</li>
 <li><strong>OpenStreetMap (Nominatim)</strong> &mdash; place search; it receives the text you search for and your IP address.</li>
 <li><strong>Apple</strong> &mdash; app distribution through the App Store.</li>
 </ul>
 
-<h2>5. Why we process data (legal bases)</h2>
+<h2>7. Why we process data (legal bases)</h2>
 <ul>
-<li>To provide the service you request, such as sign-in, your collection and adding places (Art. 6(1)(b) GDPR).</li>
-<li>On the basis of your consent, for location and photos (Art. 6(1)(a)).</li>
+<li>To provide the service you request, such as sign-in, your collection, friends and adding places (Art. 6(1)(b) GDPR).</li>
+<li>On the basis of your consent, for location, camera and notifications (Art. 6(1)(a)), which you can withdraw in iOS Settings.</li>
 <li>For our legitimate interest in keeping the platform secure, moderating content and preventing abuse (Art. 6(1)(f)).</li>
 </ul>
 
-<h2>6. How long we keep data</h2>
-<p>We keep account data until you delete your account. Places and photos already published remain available anonymously after the account is deleted, as they are a contribution to the community. Photos rejected by moderators are deleted.</p>
+<h2>8. How long we keep data</h2>
+<p>We keep account data until you delete your account. Photos pending review and reports are kept until a moderator decides or the account is deleted. Places and photos already published remain available anonymously after the account is deleted, as they are a contribution to the community.</p>
 
-<h2>7. Deleting your account</h2>
-<p>You can delete your account from <em>Profile &rarr; Privacy and data &rarr; Delete my account</em>. Deletion is immediate and removes your account, profile, collection, reports and private or pending photos. Your name does not remain associated with published content.</p>
+<h2>9. Deleting your account</h2>
+<p>You can delete your account from <em>Profile &rarr; Privacy and data &rarr; Delete my account</em>. Deletion is immediate and removes your account, profile, collection and purchase details, wishlist, favorite places, friendships, points, notification tokens, the reports you sent or received and your private or pending photos. Your name does not remain associated with places and photos already published.</p>
 
-<h2>8. Your rights</h2>
+<h2>10. Your rights</h2>
 <p>You have the right to access, correct and delete your data, to restrict processing, to receive your data in a readable format (portability) and to object to processing; you can withdraw any consent at any time. Write to <a href="mailto:zeroeurosouvenir@icloud.com">zeroeurosouvenir@icloud.com</a>. You also have the right to lodge a complaint with the Italian data protection authority (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>) or your local authority.</p>
 
-<h2>9. Transfers outside the European Union</h2>
-<p>Data is hosted in the European Union. Some external services, such as maps, may process your IP address outside the European Economic Area, with the safeguards provided by the GDPR.</p>
+<h2>11. Transfers outside the European Union</h2>
+<p>Data is hosted in the European Union. Some external services, such as maps, notifications and Google ML Kit, may process technical data outside the European Economic Area, with the safeguards provided by the GDPR.</p>
 
-<h2>10. Children</h2>
+<h2>12. Children</h2>
 <p>The app is not directed to children under 14 and we do not knowingly collect data from children of that age. If you believe a child has given us data, write to us and we will delete it.</p>
 
-<h2>11. Changes to this policy</h2>
+<h2>13. Changes to this policy</h2>
 <p>If we change how we process data, we will update this page and the date above. For important changes we will notify you in the app.</p>
 
 </main>
